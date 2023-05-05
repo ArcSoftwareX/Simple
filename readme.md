@@ -5,4 +5,4 @@ Simple is a very simple state container that can be used in any apps. Currently 
 - Atomic store `atom`
 <br />
 <br />
-\#KEEP_IT_SIMPLE
+#KEEP_IT_SIMPLE
