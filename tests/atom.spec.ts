@@ -1,7 +1,7 @@
 import { it, expect, describe, bench } from 'vitest'
 import { atom } from '../dist'
 
-describe('Getting/Setting store value', () => {
+describe('Atomic store functionality test', () => {
     const store = atom(0)
 
     it('Call set + get', () => {

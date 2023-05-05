@@ -1,6 +1,6 @@
-import { Callback } from "../types"
+import type { Callback, Store } from "../types"
 
-export const createStore = <T>(initialValue: T) => {
+export const createStore = <T>(initialValue: T): Store<T> => {
     let value = initialValue
     const callbacks: Callback<T>[] = []
 
@@ -10,14 +10,14 @@ export const createStore = <T>(initialValue: T) => {
         },
         set(newValue: T) {
             value = newValue
-            this.notify()
+            this.$notify()
         },
         subscribe(callback: Callback<T>): () => void {
             const current = callbacks.length
             callbacks.push(callback)
             return () => callbacks.splice(current, 1)
         },
-        notify() {
+        $notify() {
             if (callbacks.length === 0) return
             callbacks.forEach(callback => callback(value))
         }
