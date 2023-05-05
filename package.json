@@ -1,7 +1,7 @@
 {
-  "name": "simple-state",
+  "name": "simple-stores",
   "version": "0.0.1",
-  "description": "A SIMPLE state container for JavaScript apps",
+  "description": "A Simple stores library for JavaScript apps",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -11,6 +11,7 @@
   },
   "author": "Igor Vladimirov",
   "license": "MIT",
+  "keywords": ["State management", "State"],
   "devDependencies": {
     "typescript": "^5.0.4",
     "vitest": "^0.31.0"
