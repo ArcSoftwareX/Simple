@@ -1,0 +1,18 @@
+{
+  "name": "simple-state",
+  "version": "0.0.1",
+  "description": "A SIMPLE state container for JavaScript apps",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "test": "vitest"
+  },
+  "author": "Igor Vladimirov",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.4",
+    "vitest": "^0.31.0"
+  }
+}
