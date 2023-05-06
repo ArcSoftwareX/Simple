@@ -1,2 +1,2 @@
-export { atom } from './atom'
-export { kv } from './kv'
+export { createAtom } from './atom'
+export { createKV } from './kv'

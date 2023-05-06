@@ -5,3 +5,4 @@ export type Store<T> = {
     subscribe(callback: Callback<T>): () => void;
     $notify(): void;
 }
+export type Factory<T> = (store: Store<T>) => T

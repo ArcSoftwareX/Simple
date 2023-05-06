@@ -1,7 +1,7 @@
 {
   "name": "simple-stores",
-  "version": "0.0.1",
-  "description": "A Simple stores library for JavaScript apps",
+  "version": "0.0.2",
+  "description": "Predictable stores for JavaScript apps",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

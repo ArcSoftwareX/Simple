@@ -1,3 +1,6 @@
-export { atom } from './store';
-export { Callback } from './types/index';
-export { kv } from './store'
+export { createAtom } from './store'
+export { createKV } from './store'
+export { createState } from './state'
+export { Callback } from './types'
+export { Store } from './types'
+export { Factory } from './types'

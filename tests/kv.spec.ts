@@ -1,8 +1,8 @@
 import { describe, it, expect } from "vitest";
-import { kv } from "../src";
+import { createKV } from "../src";
 
 describe('Key-value store functionality test', () => {
-    const store = kv({ test: true })
+    const store = createKV({ test: true })
     
     it('Call getKey or setKey', () => {
         store.setKey('test', false)

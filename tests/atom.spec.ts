@@ -1,8 +1,8 @@
-import { it, expect, describe, bench } from 'vitest'
-import { atom } from '../dist'
+import { it, expect, describe } from 'vitest'
+import { createAtom } from '../src'
 
-describe('Atomic store functionality test', () => {
-    const store = atom(0)
+describe('createAtomic store functionality test', () => {
+    const store = createAtom(0)
 
     it('Call set + get', () => {
         store.set(5)

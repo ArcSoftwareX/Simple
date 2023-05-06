@@ -1,6 +1,6 @@
 import { createStore } from './store'
 
-export const atom = <T>(initialValue: T) => {  
+export const createAtom = <T>(initialValue: T) => {  
     const store = createStore(initialValue)
 
     return store
